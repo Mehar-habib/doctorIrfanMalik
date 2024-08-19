@@ -1,0 +1,12 @@
+[
+    { "id": 1, "title": "Asthma Care", "image": "/asthma.jpg", "description": "Asthma is a chronic disease in which the bronchial airways in the lungs become narrowed and swollen, making it difficult to breathe." },
+    { "id": 2, "title": "Bronchoscopy", "image": "/brono.jpg", "description": "Bronchoscopy is a test to view the airways and diagnose lung disease. It may also be used during the treatment of some lung conditions." },
+    { "id": 3, "title": "Pneumonia", "image": "/pneu.jpeg", "description": "Pneumonia in children is an infection that inflames the air sacs in the lungs, leading to difficulty breathing, cough, and fever." },
+    { "id": 4, "title": "Tuberculosis TB", "image": "/tb.jpg", "description": "Tuberculosis (TB) is a contagious bacterial infection that primarily affects the lungs, causing symptoms like persistent cough, fever, and weight loss." },
+    { "id": 5, "title": "Seasonal Allergies", "image": "/s1.png", "description": "Seasonal allergies, also known as hay fever, are allergic reactions triggered by pollen and other airborne allergens, leading to symptoms like sneezing, runny nose, and itchy eyes." },
+    { "id": 6, "title": "Hives/Urticaria", "image": "/urticaria_skin.png", "description": "Urticaria, also known as hives, is a skin condition characterized by red, itchy welts that can appear anywhere on the body, often triggered by an allergic reaction." },
+    { "id": 7, "title": "Chronic Sinusitis", "image": "/s8.png", "description": "Chronic sinusitis is a long-lasting inflammation of the sinuses that leads to symptoms like nasal congestion, facial pain, and reduced sense of smell." },
+    { "id": 8, "title": "Eczema/Atopic Dermatitis", "image": "/s7.png", "description": "Eczema, or atopic dermatitis, is a chronic skin condition causing inflamed, itchy, and dry patches of skin, often triggered by allergens or irritants." },
+    { "id": 9, "title": "Food Allergies", "image": "/s2.png", "description": "Food allergies are immune system reactions to specific proteins in certain foods, causing symptoms like hives, swelling, or gastrointestinal issues after ingestion." }
+  ]
+  

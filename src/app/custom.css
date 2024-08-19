@@ -1,0 +1,123 @@
+.img{
+  animation: img 7s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+@keyframes img{
+  0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+  100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* card css */
+.card {
+  --rounded: 20px;
+  --size: 400px;
+  width: var(--size);
+  height: calc(var(--size) - 30px);
+  border-radius: var(--rounded);
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  --size: 100%;
+  --blur: 20px;
+  content: "";
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  filter: blur(var(--blur));
+  background-color: #faff99;
+  background-image: radial-gradient(at 33% 82%, hsla(254,71%,69%,1) 0px, transparent 50%),
+  radial-gradient(at 28% 4%, hsla(289,96%,63%,1) 0px, transparent 50%),
+  radial-gradient(at 69% 49%, hsla(309,91%,71%,1) 0px, transparent 50%),
+  radial-gradient(at 94% 14%, hsla(232,66%,62%,1) 0px, transparent 50%),
+  radial-gradient(at 19% 93%, hsla(51,98%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 15% 80%, hsla(194,87%,63%,1) 0px, transparent 50%),
+  radial-gradient(at 56% 52%, hsla(109,71%,61%,1) 0px, transparent 50%);
+}
+
+.card::after {
+  --size: 100%;
+  content: "";
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: rgba(255, 255, 255, 0.5);
+}
+.card__view {
+  position: absolute;
+  height: 55%;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  background-image: linear-gradient(to right bottom, #fff, #e2e2e2);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 9px;
+  padding-right: 9px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ping */
+.ping {
+  --uib-size: 25px;
+  --uib-speed: 1s;
+  --uib-color: #3950cf;
+  position: relative;
+  height: var(--uib-size);
+  width: var(--uib-size);
+ }
+ 
+ .ping::before,
+ .ping::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  animation: pulse7132 var(--uib-speed) linear infinite;
+  transform: scale(0);
+  opacity: 0;
+ }
+ 
+ .ping::after {
+  animation-delay: calc(var(--uib-speed) / -2);
+ }
+ 
+ @keyframes pulse7132 {
+  0% {
+   transform: scale(0);
+   opacity: 1;
+  }
+ 
+  100% {
+   transform: scale(1);
+   opacity: 0;
+  }
+ }
+ 
