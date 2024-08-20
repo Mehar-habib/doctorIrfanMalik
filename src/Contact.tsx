@@ -80,7 +80,7 @@ export default function Contact() {
                 <h1 className="md:text-2xl text-xl font-bold py-2 mt-2">
                   General Hospital Lahore
                 </h1>
-                <div className="md:text-lg text-base px-4 font-semibold flex items-center justify-center">
+                <div className="md:text-lg text-base px-4 pb-2 font-semibold flex items-center justify-center">
                   <span className="ping mr-2"></span>
                   Monday to Saturday: 12PM to 5:30PM
                 </div>

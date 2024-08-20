@@ -18,17 +18,29 @@ export default function Navbar() {
 
   const tabs = [
     { name: "Home", path: "/" },
-    { name: "About", path: "#About" },
-    { name: "Service", path: "#Services" },
+    { name: "About", path: "/#About" },
+    { name: "Service", path: "/#Services" },
     { name: "Videos & FAQ", path: "/blogs" },
-    { name: "Contact Us", path: "#Contact" },
+    { name: "Contact Us", path: "/#Contact" },
   ];
 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(false);
+    setActiveTab(window.location.pathname + window.location.hash);
   }, []);
+
+  const handleTabClick = (path: string) => {
+    setActiveTab(path);
+    if (path.includes("#")) {
+      const elementId = path.split("#")[1];
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <>
@@ -63,8 +75,8 @@ export default function Navbar() {
                         : "hover:text-blue-500 hover:font-bold"
                     }`}
                   >
-                    <Link href={path}>
-                      <span onClick={() => setActiveTab(path)}>{name}</span>
+                    <Link href={path} scroll={false}>
+                      <span onClick={() => handleTabClick(path)}>{name}</span>
                     </Link>
                   </li>
                 ))}
@@ -106,7 +118,7 @@ export default function Navbar() {
                       }`}
                     >
                       <Link href={path} scroll={false}>
-                        <span onClick={() => setActiveTab(path)}>{name}</span>
+                        <span onClick={() => handleTabClick(path)}>{name}</span>
                       </Link>
                     </li>
                   ))}

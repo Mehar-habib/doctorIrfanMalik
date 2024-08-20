@@ -17,13 +17,13 @@ const testimonials = [
   },
   {
     quote:
-      "The doctor was gentle, responsive, and soft-spoken. He patiently listened to our queries. Simply great; everything was awesome, Alhamdulillah. My mother was really satisfied with Dr. Irfan Malik.",
+      "Dr Irfan Malik understands the problem of a patient and explains the problem in the best way anyone can understand. Thanks Doctor.",
     name: "H*** ***i",
     image: "/user.png",
   },
   {
     quote:
-      "Prof. Dr. Irfan Malik is a very Kind, Humble and well experienced person, i will recommend everyone to visit him, Don’t waste ur time & money in other big names, But this one is excellent",
+      "Prof. Dr. Irfan Malik understands the problem of a patient and explains the problem in the best way anyone can understand. Thanks Doctor.",
     name: "Habib-ur-Rehman",
     image: "/habib.png",
   },
